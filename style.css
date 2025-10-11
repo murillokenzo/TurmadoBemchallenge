@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-image: url(imagens-do-projeto/imagemfundovitta.jpg);
+    background-size: 50%;
+} 
+
+main{
+    font-family: "Oswald", sans-serif;
+    background-color: #F8F5F1;
+    box-shadow: 0px 0px 5px black;
+    min-width: 280px;
+    padding: 80px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 1500px;
+}
+
+main h1{
+    background-color: #3B5C75;
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.acessos{
+    background-color: #3B5C75;
+    font-style: italic;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.acessos a{
+    color: rgb(255, 255, 255);
+    padding-left: 60px;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+
+.conteudo{
+    margin: 0;
+    padding: 0;
+
+}
+
+.conteudo p{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.logovitta{
+    background-color: #F8F5F1;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+    height: 250px;
+}
+
+.botaofaleconosco{
+    text-decoration: none ;
+    margin: 20px;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    height: 50px;
+    width: 30%;
+    background-color: #3B5C75;
+    color: #F8F5F1;
+}
+.botaofaleconosco a{
+    color: white;
+}
+.botaofaleconosco p:hover{
+    font-size: 130%;
+}
+img{
+    display: flex;
+    justify-self: center;
+    border-radius: 500px;
+}
+h2{
+background-color: #3B5C75;
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+    margin: 0;
+}
+h3{
+    background-color: #3B5C75;
+    border-radius: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.Perguntas {
+    display: flex;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.Perguntas img{
+    width: 300px;
+    border-radius: 0;
+}
+
+.participantes img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+.textoparticipantes{
+    text-align: center;
+    font-size: 30px;
+}
+.conteudo li{
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+.sobrepagina{
+    font-family: "Oswald", sans-serif;
+    background-color: #F8F5F1;
+    box-shadow: 0px 0px 5px black;
+    min-width: 280px;
+    padding: 80px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 2700px;
+}
+#mainfaq{
+    font-family: "Oswald", sans-serif;
+    background-color: #F8F5F1;
+    box-shadow: 0px 0px 5px black;
+    min-width: 280px;
+    padding: 80px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+}
+#mainintegrantes{
+    font-family: "Oswald", sans-serif;
+    background-color: #F8F5F1;
+    box-shadow: 0px 0px 5px black;
+    min-width: 280px;
+    padding: 80px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 2100px;
+}
+.acessos a:hover{
+    font-size: 200%;
+}
+#mainfaleconosco{
+    font-family: "Oswald", sans-serif;
+    background-color: #F8F5F1;
+    box-shadow: 0px 0px 5px black;
+    min-width: 280px;
+    padding: 80px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+}
