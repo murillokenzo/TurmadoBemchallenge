@@ -186,6 +186,141 @@ main h1 {
     height: 2700px;
 }
 
+#mainservicos {
+  font-family: "Oswald", sans-serif;
+  background-color: #F8F5F1;
+  box-shadow: 0px 0px 5px black;
+  min-width: 280px;
+  padding: 80px;
+  padding-top: 20px;
+  display: block;
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.servico {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.servico:hover {
+  transform: translateY(-8px);
+}
+
+.servico img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.servico h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4em;
+}
+
+@media (max-width: 600px) {
+  .acessos a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  #mainservicos {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .servico {
+    width: 90%;
+  }
+
+  .servico h2 {
+    font-size: 20px;
+  }
+
+  .servico p {
+    font-size: 16px;
+  }
+
+  .botaofaleconosco {
+    width: 80%;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .servico {
+    width: 80%;
+  }
+
+  .acessos a {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .botaofaleconosco {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #mainservicos {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .servico {
+    width: 45%;
+  }
+
+  .botaofaleconosco {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  #mainservicos {
+    width: 85%;
+  }
+
+  .servico {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1300px) {
+  #mainservicos {
+    width: 1200px;
+  }
+
+  .servico {
+    width: 300px;
+  }
+}
+
 #mainlogin {
   width: 90%;
   max-width: 600px;
@@ -621,6 +756,7 @@ main h1 {
     height: 120px;
   }
 }
+
 
 }
 
