@@ -288,7 +288,7 @@ main h1 {
     display: block;
     margin: auto;
     width: 1200px;
-    height: 2100px;
+    height: auto;
 }
 
 #mainfaleconosco {

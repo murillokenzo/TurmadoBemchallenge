@@ -8,24 +8,37 @@
   <title>Vitta - FAQ</title>
 
   <style>
-    details {
+    .faq-item {
       border: 2px solid;
       border-radius: 8px;
       padding: 10px;
       width: 300px;
       font-family: Arial, sans-serif;
       color: #3B5C75;
+      margin-bottom: 10px;
+      transition: 0.3s;
     }
 
-    summary {
+    .faq-question {
       cursor: pointer;
       font-weight: bold;
       color: #0877C8;
+      user-select: none;
     }
 
-    p {
+    .faq-answer {
       margin-top: 10px;
       text-align: left;
+      display: none;
+    }
+
+    .faq-item.active {
+      background-color: #e6f1fa;
+      box-shadow: 0 0 10px rgba(8, 119, 200, 0.2);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
     }
   </style>
 </head>
@@ -51,27 +64,40 @@
       </figure>
 
       <div class="faq-lista">
-        <details>
-          <summary>👉 Preciso marcar consultas com antecedência?</summary>
-          <p>Sim! Toda e qualquer consulta deve ser feita com antecedência, agendada na nossa página de contatos.</p>
-        </details>
+        <div class="faq-item">
+          <div class="faq-question">👉 Preciso marcar consultas com antecedência?</div>
+          <div class="faq-answer">Sim! Toda e qualquer consulta deve ser feita com antecedência, agendada na nossa página de contatos.</div>
+        </div>
 
-        <details>
-          <summary>👉 Quanto tempo dura uma consulta?</summary>
-          <p>Em média, uma hora, variando de acordo com o tamanho do seu problema.</p>
-        </details>
+        <div class="faq-item">
+          <div class="faq-question">👉 Quanto tempo dura uma consulta?</div>
+          <div class="faq-answer">Em média, uma hora, variando de acordo com o tamanho do seu problema.</div>
+        </div>
 
-        <details>
-          <summary>👉 Com que frequência devo ir ao dentista?</summary>
-          <p>Se não houver nenhum problema dentário, é recomendado que as visitas ao dentista ocorram a cada 6 meses.</p>
-        </details>
+        <div class="faq-item">
+          <div class="faq-question">👉 Com que frequência devo ir ao dentista?</div>
+          <div class="faq-answer">Se não houver nenhum problema dentário, é recomendado que as visitas ao dentista ocorram a cada 6 meses.</div>
+        </div>
 
-        <details>
-          <summary>👉 Quem pode ser atendido?</summary>
-          <p>Na Vitta, damos prioridade a quem não possui condições de pagar por um tratamento em uma clínica privada ou conveniada. Após comprovação da situação, o paciente tem direito a uma consulta gratuita.</p>
-        </details>
+        <div class="faq-item">
+          <div class="faq-question">👉 Quem pode ser atendido?</div>
+          <div class="faq-answer">Na Vitta, damos prioridade a quem não possui condições de pagar por um tratamento em uma clínica privada ou conveniada. Após comprovação da situação, o paciente tem direito a uma consulta gratuita.</div>
+        </div>
       </div>
     </section>
   </main>
+
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+      question.addEventListener("click", () => {
+        faqItems.forEach(i => {
+          if (i !== item) i.classList.remove("active");
+        });
+        item.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 </html>
