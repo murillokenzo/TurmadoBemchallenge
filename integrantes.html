@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens-do-projeto/faviconvitta.png" type="image/x-icon">
+    <title>Vitta - Nossa Equipe</title>
     <link rel="stylesheet" href="style.css">
-    <title>Vitta - Integrantes</title>
+    <link rel="shortcut icon" href="imagens-do-projeto/faviconvitta.png" type="image/x-icon">
 </head>
 <body>
-    <div class="logovitta">
-        <img src="imagens-do-projeto/logovitta.png" alt="">
-    </div>
-    <div class="acessos">
-        <a href="index.html">Home</a>
-        <a href="integrantes.html">Integrantes</a>
-        <a href="faq.html">Perguntas Frequentes</a>
-        <a href="sobre.html">Sobre Nós</a>
-    </div>
-    <main id="mainintegrantes">
-        <div class="participantes">
-            <img src="imagens-do-projeto/murillovitta.jpg" alt="">
+    <header class="topo">
+        <div class="logovitta">
+            <img src="imagens-do-projeto/logovitta.png" alt="Logo Vitta">
         </div>
-        <div class="textoparticipantes">
-            <p>Murillo Kenzo Loureiro Kacinvazaki</p>
-            <p>RM - 566948</p>
-            <p>1TDSPA</p>
-        </div>
-        <div class="participantes">
-            <img src="imagens-do-projeto/pradovitta.jpg" alt="">
-            <div class="textoparticipantes">
-                <p>Kauan Prado Famelli</p>
-                <p>RM - 566990</p>
-                <p>1TDSPA</p>
+        <nav class="acessos">
+            <a href="index.html">Home</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="faq.html">Perguntas Frequentes</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main class="integrantes">
+        <h1>Conheça nossa melhor equipe</h1>
+        <section class="cards">
+            
+            <div class="card">
+                <img src="imagens-do-projeto/murillovitta.jpg" alt="">
+                <h2>Murillo Kenzo Loureiro Kacinvazaki</h2>
+                <p class="descricao">RM - 566948</p>
+                <p class="cargo">Front-end</p>
+                <div class="links">
+                    <a href="https://github.com/murillokenzo" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/murillo-kenzo-loureiro-kacinvazaki-38362b347/" target="_blank">LinkedIn</a>
+                </div>
             </div>
-            <div>
+
+            <div class="card">
                 <img src="imagens-do-projeto/cauavitta.jpg" alt="">
+                <h2>Cauã Rocha do Amaral</h2>
+                <p class="descricao">RM = 567593</p>
+                <p class="cargo">Java</p>
+                <div class="links">
+                    <a href="https://github.com/eozoka" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/cau%C3%A3-rocha-983171269/" target="_blank">LinkedIn</a>
+                </div>
             </div>
-            <div class="textoparticipantes">
-                <p>Cauã Rocha do Amaral</p>
-                <p>RM - 567593</p>
-                <p>1TDSPA</p>
+
+            <div class="card">
+               <img src="imagens-do-projeto/pradovitta.jpg" alt="">
+                <h2>Kauan Prado Famelli</h2>
+                <p class="descricao">RM - 566990</p>
+                <p class="cargo">Python</p>
+                <div class="links">
+                    <a href="https://github.com/kauanpf" target="_blank">GitHub</a>
+                    <a href="http://www.linkedin.com/in/kauan-prado-famelli-38018a381" target="_blank">LinkedIn</a>
+                </div>
             </div>
-        </div>
+
+        </section>
     </main>
 </body>
 </html>

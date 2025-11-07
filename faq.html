@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens-do-projeto/faviconvitta.png" type="image/x-icon">
-    <title>Vitta - FAQ</title>
-    <style>
-        details {
-  border: 2px solid ;
-  border-radius: 8px;
-  padding: 10px;
-  width: 300px;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  color: #3B5C75;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens-do-projeto/faviconvitta.png" type="image/x-icon">
+  <title>Vitta - FAQ</title>
 
-summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #0877C8;
-}
+  <style>
+    details {
+      border: 2px solid;
+      border-radius: 8px;
+      padding: 10px;
+      width: 300px;
+      font-family: Arial, sans-serif;
+      color: #3B5C75;
+    }
 
-p {
-  margin-top: 10px;
-  display: flex;
-  justify-content: left;
-  text-align: center;
-  
-}
-    </style>
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #0877C8;
+    }
+
+    p {
+      margin-top: 10px;
+      text-align: left;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="logovitta">
-        <img src="imagens-do-projeto/logovitta.png" alt="">
-    </div>
-    <div class="acessos">
-        <a href="index.html">Home</a>
-        <a href="integrantes.html">Integrantes</a>
-        <a href="faq.html">Perguntas Frequentes</a>
-        <a href="sobre.html">Sobre Nós</a>
-    </div>
-    <main id="mainfaq">
-        <h1>❓Perguntas frequentes</h1>
-    
-  <div class="Perguntas">
-    <img src="imagens-do-projeto/imagemfaqvita.webp" alt="">
-          <details>
-          <summary>👉Preciso marcar consultas com antecedencia?</summary>
-          <p>Sim!! toda e qualquer consulta deve ser feita com antecedencia, agendada na nossa pagina de contatos.</p>
-      </details>
-      <details>
-          <summary>👉Quanto tempo dura uma consulta?</summary>
-          <p>Em média, uma hora, oscilando de acordo com o tamanho do seu problema.</p>
-      </details>
-      <details>
-          <summary>👉Com que frequecia devo ir ao dentista?</summary>
-          <p>Caso a sua situação não apresente nenhum problema dentario, é recomendado por profissionais de que no minimo de 6 em 6 meses se frequente um dentista.</p>
-      </details>
-      <details>
-          <summary>👉Quem pode ser atendido?</summary>
-          <p>Na vitta, damos prioridade aqueles que não possuem condições de pagar por um tratamento em uma clinica privada ou conveniada. Confirmamos tal condição por meio de documentos, comprovantes e após a confirmação, voce tera direito a uma consulta totalmente gratuita.</p>
-      </details>
-  </div>
-    </main>
+  <header class="logovitta">
+    <img src="imagens-do-projeto/logovitta.png" alt="Logo da Vitta">
+  </header>
+
+  <nav class="acessos">
+    <a href="index.html">Home</a>
+    <a href="integrantes.html">Integrantes</a>
+    <a href="faq.html">Perguntas Frequentes</a>
+    <a href="sobre.html">Sobre Nós</a>
+  </nav>
+
+  <main id="mainfaq">
+    <h1>❓ Perguntas Frequentes</h1>
+
+    <section class="Perguntas">
+      <figure>
+        <img src="imagens-do-projeto/imagemfaqvita.webp" alt="Ilustração de perguntas e respostas">
+      </figure>
+
+      <div class="faq-lista">
+        <details>
+          <summary>👉 Preciso marcar consultas com antecedência?</summary>
+          <p>Sim! Toda e qualquer consulta deve ser feita com antecedência, agendada na nossa página de contatos.</p>
+        </details>
+
+        <details>
+          <summary>👉 Quanto tempo dura uma consulta?</summary>
+          <p>Em média, uma hora, variando de acordo com o tamanho do seu problema.</p>
+        </details>
+
+        <details>
+          <summary>👉 Com que frequência devo ir ao dentista?</summary>
+          <p>Se não houver nenhum problema dentário, é recomendado que as visitas ao dentista ocorram a cada 6 meses.</p>
+        </details>
+
+        <details>
+          <summary>👉 Quem pode ser atendido?</summary>
+          <p>Na Vitta, damos prioridade a quem não possui condições de pagar por um tratamento em uma clínica privada ou conveniada. Após comprovação da situação, o paciente tem direito a uma consulta gratuita.</p>
+        </details>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
