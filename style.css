@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-/* ===== FONTES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ===== CONFIGURAÇÕES GERAIS ===== */
 body {
     width: auto;
     height: auto;
@@ -36,7 +34,6 @@ h3 {
     color: white;
 }
 
-/* ===== CABEÇALHO ===== */
 .logovitta {
     background-color: #F8F5F1;
     display: flex;
@@ -45,7 +42,6 @@ h3 {
     height: 250px;
 }
 
-/* ===== MENU DE ACESSO ===== */
 .acessos {
     background-color: #3B5C75;
     font-style: italic;
@@ -66,7 +62,6 @@ h3 {
     font-size: 200%;
 }
 
-/* ===== ESTRUTURA PRINCIPAL ===== */
 main {
     font-family: "Oswald", sans-serif;
     background-color: #F8F5F1;
@@ -89,7 +84,6 @@ main h1 {
     text-align: center;
 }
 
-/* ===== CONTEÚDO ===== */
 .conteudo {
     margin: 0;
     padding: 0;
@@ -107,7 +101,6 @@ main h1 {
     font-weight: bolder;
 }
 
-/* ===== PARTICIPANTES ===== */
 .participantes img {
     width: 30%;
     display: flex;
@@ -120,7 +113,6 @@ main h1 {
     font-size: 30px;
 }
 
-/* ===== BOTÃO FALE CONOSCO ===== */
 .botaofaleconosco {
     text-decoration: none;
     margin: 20px 0 40px 0;
@@ -148,7 +140,6 @@ main h1 {
     font-size: 130%;
 }
 
-/* ===== SEÇÃO DE PERGUNTAS ===== */
 .Perguntas {
     display: flex;
     gap: 40px;
@@ -160,7 +151,6 @@ main h1 {
     border-radius: 0;
 }
 
-/* ===== PÁGINAS ESPECÍFICAS ===== */
 .sobrepagina {
     font-family: "Oswald", sans-serif;
     background-color: #F8F5F1;
@@ -271,7 +261,6 @@ main h1 {
     margin-bottom: 20px;
 }
 
-/* Links GitHub e LinkedIn */
 .links {
     display: flex;
     justify-content: center;
@@ -289,11 +278,249 @@ main h1 {
     color: #3B5C75;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
         align-items: center;
     }
+
+@media (max-width: 600px) {
+  body {
+    background-size: 100%;
+  }
+
+  .logovitta {
+    height: 150px;
+  }
+
+  .logovitta img {
+    width: 70%;
+    height: auto;
+  }
+
+  .acessos {
+    padding: 5px;
+  }
+
+  .acessos a {
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  main,
+  .sobrepagina,
+  #mainfaq,
+  #mainintegrantes,
+  #mainfaleconosco {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  h2, h3 {
+    font-size: 24px;
+  }
+
+  main h1 {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .conteudo p {
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .Perguntas {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Perguntas img {
+    width: 80%;
+  }
+
+  .botaofaleconosco {
+    width: 80%;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
 }
+
+@media (min-width: 600px) and (max-width: 767px) {
+  body {
+    background-size: 80%;
+  }
+
+  .acessos a {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  main,
+  .sobrepagina,
+  #mainfaq,
+  #mainintegrantes,
+  #mainfaleconosco {
+    width: 90%;
+    height: auto;
+    padding: 40px;
+  }
+
+  main h1 {
+    font-size: 32px;
+  }
+
+  .conteudo p {
+    font-size: 20px;
+  }
+
+  .botaofaleconosco {
+    width: 60%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .Perguntas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Perguntas img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logovitta {
+    height: 200px;
+  }
+
+  .acessos a {
+    font-size: 22px;
+    padding-left: 40px;
+  }
+
+  main,
+  .sobrepagina,
+  #mainfaq,
+  #mainintegrantes,
+  #mainfaleconosco {
+    width: 85%;
+    height: auto;
+    padding: 60px;
+  }
+
+  main h1 {
+    font-size: 36px;
+  }
+
+  .conteudo p {
+    font-size: 22px;
+  }
+
+  .botaofaleconosco {
+    width: 45%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .Perguntas img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  main,
+  .sobrepagina,
+  #mainfaq,
+  #mainintegrantes,
+  #mainfaleconosco {
+    width: 80%;
+    height: auto;
+  }
+
+  .conteudo p {
+    font-size: 23px;
+  }
+
+  .botaofaleconosco {
+    width: 35%;
+  }
+
+  .cards {
+    gap: 30px;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .Perguntas img {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1300px) {
+  main,
+  .sobrepagina,
+  #mainfaq,
+  #mainintegrantes,
+  #mainfaleconosco {
+    width: 1200px;
+    height: auto;
+  }
+
+  .conteudo p {
+    font-size: 25px;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+}
+
 
