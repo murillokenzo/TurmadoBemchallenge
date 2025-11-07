@@ -13,9 +13,11 @@ body {
 }
 
 img {
-    display: flex;
-    justify-self: center;
-    border-radius: 500px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
 }
 
 h2 {
@@ -38,8 +40,16 @@ h3 {
     background-color: #F8F5F1;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 250px;
+    padding: 10px 0;
+}
+
+.logovitta img {
+    width: 220px;
+    max-width: 60%;
+    height: auto;
+    border-radius: 0;
 }
 
 .acessos {
@@ -221,12 +231,6 @@ main h1 {
   transform: translateY(-8px);
 }
 
-.servico img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
 .servico h2 {
   color: #ffffff;
   font-size: 24px;
@@ -267,7 +271,6 @@ main h1 {
   .botaofaleconosco {
     width: 80%;
     font-size: 18px;
-    margin-top: 40px;
   }
 }
 
