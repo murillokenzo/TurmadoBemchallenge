@@ -196,6 +196,115 @@ main h1 {
     height: 2700px;
 }
 
+#mainunidades {
+  font-family: "Oswald", sans-serif;
+  background-color: #F8F5F1;
+  box-shadow: 0px 0px 5px black;
+  min-width: 280px;
+  padding: 80px;
+  padding-top: 20px;
+  display: block;
+  margin: auto;
+  width: 1200px;
+  height: auto;
+}
+
+.mapa {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.unidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.unidade {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.unidade:hover {
+  transform: translateY(-8px);
+}
+
+.unidade h2 {
+  color: #ffffff;
+  background-color: #3B5C75;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.unidade p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4em;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #mainunidades {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .unidade {
+    width: 90%;
+  }
+
+  .mapa iframe {
+    height: 250px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .unidade {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #mainunidades {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .unidade {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  #mainunidades {
+    width: 85%;
+  }
+
+  .unidade {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1300px) {
+  #mainunidades {
+    width: 1200px;
+  }
+
+  .unidade {
+    width: 300px;
+  }
+}
+
+
 #mainservicos {
   font-family: "Oswald", sans-serif;
   background-color: #F8F5F1;
