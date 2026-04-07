@@ -6,6 +6,7 @@ import FAQ from './pages/FAQ'
 import FaleConosco from './pages/faleConosco'
 import Login from './pages/login'
 import Servicos from './pages/servicos'
+import Unidades from './pages/Unidades'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/fale-conosco" element={<FaleConosco />} />
         <Route path="/login" element={<Login />} />
         <Route path="/servicos" element={<Servicos />} />
-        <Route path="/unidades" element={<h1>Unidades</h1>} />
+        <Route path="/unidades" element={<Unidades />} />
       </Routes>
     </BrowserRouter>
   )
