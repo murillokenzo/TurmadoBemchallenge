@@ -57,7 +57,7 @@ h3 {
     text-align: center;
 }
 
-.acessos a {
+.acessos a:not(.botao-login-flutuante){
     color: white;
     padding-left: 60px;
     font-family: "Oswald", sans-serif;
@@ -80,7 +80,7 @@ main {
     display: block;
     margin: auto;
     width: 1200px;
-    height: 1500px;
+    height: 1100px;
 }
 
 main h1 {
@@ -158,7 +158,8 @@ main h1 {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 15px;
+  padding-left: 15px;
   border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
@@ -191,7 +192,7 @@ main h1 {
     display: block;
     margin: auto;
     width: 1200px;
-    height: 2700px;
+    height: 2100px;
 }
 
 #mainunidades {
@@ -624,12 +625,40 @@ main h1 {
     color: #3B5C75;
 }
 
+.faq-item {
+  border: 2px solid #3B5C75;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  color: #3B5C75;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.faq-pergunta {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0877C8;
+  user-select: none;
+}
+
+.faq-resposta {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.faq-item.ativo {
+  background-color: #e6f1fa;
+  box-shadow: 0 0 10px rgba(8, 119, 200, 0.2);
+}
+
 .footer {
   background-color: #3B5C75;
   color: white;
   text-align: center;
   padding: 30px 20px;
-  margin-top: 40px;
+  margin-top: 0px;
   font-family: "Oswald", sans-serif;
 }
 

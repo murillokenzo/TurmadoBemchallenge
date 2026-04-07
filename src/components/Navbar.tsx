@@ -9,7 +9,9 @@ function Navbar() {
       <Link to="/sobre">Sobre Nós</Link>
       <Link to="/servicos">Serviços</Link>
       <Link to="/unidades">Unidades</Link>
+      <Link to="/login" className="botao-login-flutuante">🔐 Login</Link>
     </nav>
+
   )
 }
 
