@@ -48,11 +48,11 @@ function FAQ() {
                 key={index}
                 className={`faq-item ${ativo === index ? 'active' : ''}`}
               >
-                <div className="faq-pergunta" onClick={() => toggleItem(index)}>
+                <div className="faq-question" onClick={() => toggleItem(index)}>
                   {item.pergunta}
                 </div>
                 {ativo === index && (
-                  <div className="faq-resposta">{item.resposta}</div>
+                  <div className="faq-answer">{item.resposta}</div>
                 )}
               </div>
             ))}
