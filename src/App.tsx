@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Sobre from './pages/sobre'
 import Integrantes from './pages/integrantes'
+import FAQ from './pages/FAQ'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/integrantes" element={<Integrantes />} />
-        <Route path="/faq" element={<h1>FAQ</h1>} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="/fale-conosco" element={<h1>Fale Conosco</h1>} />
         <Route path="/login" element={<h1>Login</h1>} />
         <Route path="/servicos" element={<h1>Serviços</h1>} />
