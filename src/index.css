@@ -57,7 +57,7 @@ h3 {
     text-align: center;
 }
 
-.acessos a:not(.botao-login-flutuante){
+.acessos a:not(.botao-login-flutuante) {
     color: white;
     padding-left: 60px;
     font-family: "Oswald", sans-serif;
@@ -65,7 +65,6 @@ h3 {
     text-decoration: none;
     transition: font-size 0.3s ease;
 }
-
 .acessos a:hover {
     font-size: 200%;
 }
@@ -106,7 +105,8 @@ main h1 {
 
 .conteudo li {
     font-family: "Roboto", sans-serif;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .participantes img {

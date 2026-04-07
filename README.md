@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# Vitta Odonto 🦷
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repositório do projeto **Vitta Odonto**, desenvolvido como parte do challenge de Front-end da FIAP.
 
-Currently, two official plugins are available:
+🔗 [Repositório no GitHub](https://github.com/murillokenzo/TurmadoBemchallenge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A **Vitta Odonto** é uma plataforma que disponibiliza atendimento odontológico gratuito ou a baixo custo para pessoas em situação de vulnerabilidade social, conectando pacientes a profissionais voluntários de forma simples e acessível.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Integrantes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Nome | RM | Disciplina |
+|---|---|---|
+| Murillo Kenzo Loureiro Kacinvazaki | 566948 | Front-end |
+| Cauã Rocha do Amaral | 567593 | Java |
+| Kauan Prado Famelli | 566990 | Python |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Tecnologias Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- Vite
+- React Router DOM
+- CSS3
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Páginas
+
+- Home
+- Sobre Nós
+- Integrantes
+- Perguntas Frequentes (FAQ)
+- Serviços
+- Unidades
+- Fale Conosco
+- Login
+
+---
+
+## Estrutura de Pastas
+
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── Navbar.tsx
+│   └── Footer.tsx
+├── pages/
+│   ├── Home.tsx
+│   ├── Sobre.tsx
+│   ├── Integrantes.tsx
+│   ├── FAQ.tsx
+│   ├── Servicos.tsx
+│   ├── Unidades.tsx
+│   ├── FaleConosco.tsx
+│   └── Login.tsx
+└── App.tsx
+
+---
+
+## Como Rodar o Projeto
+
+```bash
+npm install
+npm run dev
 ```
