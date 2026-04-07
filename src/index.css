@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     width: auto;
@@ -869,6 +867,25 @@ main h1 {
   }
 }
 
+.footer {
+  background-color: #3B5C75;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer-conteudo p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.8;
+}
 
 }
 

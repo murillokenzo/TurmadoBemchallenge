@@ -9,7 +9,7 @@ function Integrantes() {
 
       <Navbar />
 
-      <main className="integrantes">
+      <main id="mainintegrantes" className="integrantes">
         <h1>Conheça nossa melhor equipe</h1>
 
         <section className="cards">

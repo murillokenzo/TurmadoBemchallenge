@@ -1,16 +1,15 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
-      </header>
-
+      <Header />
       <Navbar />
 
       <main>
-        <section>
+        <section className="conteudo">
           <h1>Bem vindo à Vitta!</h1>
           <p>
             Nossa plataforma disponibiliza fácil atendimento e consultas solidárias
@@ -27,6 +26,8 @@ function Home() {
 
         <img src="/imagens-do-projeto/dentistavitta.webp" alt="Dentista da clínica Vitta" />
       </main>
+
+      <Footer />
     </>
   )
 }
