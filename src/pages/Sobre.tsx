@@ -1,11 +1,11 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function Sobre() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo Vitta" />
-      </header>
+      <Header />
 
       <Navbar />
 
@@ -74,6 +74,7 @@ function Sobre() {
 
         <img src="/imagens-do-projeto/vittasorriso.jpg" alt="Sorriso Vitta" className="imagemsobre" />
       </main>
+    <Footer />
     </>
   )
 }

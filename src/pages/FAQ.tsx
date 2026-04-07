@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const perguntas = [
   {
@@ -29,10 +31,7 @@ function FAQ() {
 
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
-      </header>
-
+      <Header />
       <Navbar />
 
       <main id="mainfaq">
@@ -60,6 +59,7 @@ function FAQ() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   )
 }

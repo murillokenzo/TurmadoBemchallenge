@@ -624,6 +624,26 @@ main h1 {
     color: #3B5C75;
 }
 
+.footer {
+  background-color: #3B5C75;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer-conteudo p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.footerest {
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
@@ -865,26 +885,6 @@ main h1 {
     width: 120px;
     height: 120px;
   }
-}
-
-.footer {
-  background-color: #3B5C75;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 40px;
-  font-family: "Oswald", sans-serif;
-}
-
-.footer-conteudo p {
-  margin: 8px 0;
-  font-size: 16px;
-}
-
-.footer-copy {
-  margin-top: 15px;
-  font-size: 13px;
-  opacity: 0.8;
 }
 
 }

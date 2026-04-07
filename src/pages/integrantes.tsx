@@ -1,12 +1,11 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function Integrantes() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo Vitta" />
-      </header>
-
+      <Header />
       <Navbar />
 
       <main id="mainintegrantes" className="integrantes">
@@ -49,6 +48,7 @@ function Integrantes() {
 
         </section>
       </main>
+      <Footer />
     </>
   )
 }

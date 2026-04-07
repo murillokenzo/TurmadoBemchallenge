@@ -1,4 +1,6 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 
 const unidades = [
@@ -32,9 +34,7 @@ const unidades = [
 function Unidades() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo Vitta" />
-      </header>
+      <Header />
 
       <Navbar />
 
@@ -65,6 +65,7 @@ function Unidades() {
           <p>Entre em contato conosco</p>
         </Link>
       </main>
+    <Footer />
     </>
   )
 }

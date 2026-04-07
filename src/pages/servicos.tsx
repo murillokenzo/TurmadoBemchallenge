@@ -1,4 +1,6 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 
 const servicos = [
@@ -27,10 +29,7 @@ const servicos = [
 function Servicos() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
-      </header>
-
+      <Header />
       <Navbar />
 
       <main id="mainservicos">
@@ -54,6 +53,7 @@ function Servicos() {
           <p>Agende sua consulta</p>
         </Link>
       </main>
+    <Footer />
     </>
   )
 }

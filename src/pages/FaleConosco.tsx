@@ -1,12 +1,11 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function FaleConosco() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
-      </header>
-
+      <Header />
       <Navbar />
 
       <main id="mainfaleconosco">
@@ -23,6 +22,7 @@ function FaleConosco() {
           <p>VittaOdonto@gmail.com</p>
         </section>
       </main>
+      <Footer />
     </>
   )
 }

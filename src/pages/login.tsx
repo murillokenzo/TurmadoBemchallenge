@@ -1,12 +1,11 @@
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function Login() {
   return (
     <>
-      <header>
-        <img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
-      </header>
-
+      <Header />
       <Navbar />
 
       <main id="mainlogin">
@@ -27,6 +26,7 @@ function Login() {
           <p className="semconta">Não tem uma conta? <a href="#">Cadastre-se</a></p>
         </section>
       </main>
+    <Footer />
     </>
   )
 }
