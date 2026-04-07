@@ -5,6 +5,7 @@ import Integrantes from './pages/integrantes'
 import FAQ from './pages/FAQ'
 import FaleConosco from './pages/faleConosco'
 import Login from './pages/login'
+import Servicos from './pages/servicos'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/fale-conosco" element={<FaleConosco />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/servicos" element={<h1>Serviços</h1>} />
+        <Route path="/servicos" element={<Servicos />} />
         <Route path="/unidades" element={<h1>Unidades</h1>} />
       </Routes>
     </BrowserRouter>
