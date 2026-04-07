@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import CardServico from '../components/CardServico'
 import { Link } from 'react-router-dom'
 
 const servicos = [
@@ -42,10 +43,11 @@ function Servicos() {
 
         <section className="servicos">
           {servicos.map((item, index) => (
-            <div key={index} className="servico">
-              <h2>{item.titulo}</h2>
-              <p>{item.descricao}</p>
-            </div>
+            <CardServico
+              key={index}
+              titulo={item.titulo}
+              descricao={item.descricao}
+            />
           ))}
         </section>
 
@@ -53,7 +55,8 @@ function Servicos() {
           <p>Agende sua consulta</p>
         </Link>
       </main>
-    <Footer />
+
+      <Footer />
     </>
   )
 }
