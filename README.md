@@ -50,8 +50,10 @@ A **Vitta Odonto** é uma plataforma que disponibiliza atendimento odontológico
 src/
 ├── components/
 │   ├── Header.tsx
+│   ├── CardServico.tsx
 │   ├── Navbar.tsx
-│   └── Footer.tsx
+│   ├── CardIntegrante.tsx
+│   └── Footer.tsx     
 ├── pages/
 │   ├── Home.tsx
 │   ├── Sobre.tsx
@@ -71,3 +73,5 @@ src/
 npm install
 npm run dev
 ```
+
+<img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
