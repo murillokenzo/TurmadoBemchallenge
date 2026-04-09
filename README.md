@@ -1,26 +1,12 @@
-# Vitta Odonto 🦷
-
-Repositório do projeto **Vitta Odonto**, desenvolvido como parte do challenge de Front-end da FIAP.
+# Vitta Odonto
 
 🔗 [Repositório no GitHub](https://github.com/murillokenzo/TurmadoBemchallenge)
 
----
+![Logo Vitta](https://github.com/murillokenzo/TurmadoBemchallenge/raw/main/imagens-do-projeto/logovitta.png)
 
-## Sobre o Projeto
+## Descrição
 
-A **Vitta Odonto** é uma plataforma que disponibiliza atendimento odontológico gratuito ou a baixo custo para pessoas em situação de vulnerabilidade social, conectando pacientes a profissionais voluntários de forma simples e acessível.
-
----
-
-## Integrantes
-
-| Nome | RM | Disciplina |
-|---|---|---|
-| Murillo Kenzo Loureiro Kacinvazaki | 566948 | Front-end |
-| Cauã Rocha do Amaral | 567593 | Java |
-| Kauan Prado Famelli | 566990 | Python |
-
----
+A Vitta Odonto é uma plataforma web voltada para oferecer atendimento odontológico gratuito ou a baixo custo para pessoas em situação de vulnerabilidade social. O site conecta pacientes que não têm condições de pagar por tratamentos a profissionais voluntários, com foco em acessibilidade, empatia e dignidade.
 
 ## Tecnologias Utilizadas
 
@@ -30,42 +16,48 @@ A **Vitta Odonto** é uma plataforma que disponibiliza atendimento odontológico
 - React Router DOM
 - CSS3
 
----
-
-## Páginas
-
-- Home
-- Sobre Nós
-- Integrantes
-- Perguntas Frequentes (FAQ)
-- Serviços
-- Unidades
-- Fale Conosco
-- Login
-
----
-
 ## Estrutura de Pastas
-
 src/
-├── components/
-│   ├── Header.tsx
-│   ├── CardServico.tsx
-│   ├── Navbar.tsx
-│   ├── CardIntegrante.tsx
-│   └── Footer.tsx     
-├── pages/
-│   ├── Home.tsx
-│   ├── Sobre.tsx
-│   ├── Integrantes.tsx
-│   ├── FAQ.tsx
-│   ├── Servicos.tsx
-│   ├── Unidades.tsx
-│   ├── FaleConosco.tsx
-│   └── Login.tsx
-└── App.tsx
+components/
+Header.tsx
+Navbar.tsx
+Footer.tsx
+CardIntegrante.tsx
+CardServico.tsx
+pages/
+Home.tsx
+Sobre.tsx
+Integrantes.tsx
+FAQ.tsx
+Servicos.tsx
+Unidades.tsx
+FaleConosco.tsx
+Login.tsx
+App.tsx
 
----
+## Imagens do Projeto
+
+![Página FAQ](https://github.com/murillokenzo/TurmadoBemchallenge/raw/react/imagens-do-projeto/imagemfaqvita.webp)
+
+## Autores e Créditos
+
+### Murillo Kenzo Loureiro Kacinvazaki
+- RM: 566948
+- Turma: 1TDSPA
+- Disciplina: Front-end
+- [GitHub](https://github.com/murillokenzo) | [LinkedIn](https://www.linkedin.com/in/murillo-kenzo-loureiro-kacinvazaki-38362b347/)
+
+### Cauã Rocha do Amaral
+- RM: 567593
+- Turma: 1TDSPA
+- Disciplina: Java
+- [GitHub](https://github.com/eozoka) | [LinkedIn](https://www.linkedin.com/in/cau%C3%A3-rocha-983171269/)
+
+### Kauan Prado Famelli
+- RM: 566990
+- Turma: 1TDSPA
+- Disciplina: Python
+- [GitHub](https://github.com/kauanpf) | [LinkedIn](http://www.linkedin.com/in/kauan-prado-famelli-38018a381)
 
 ## Como Rodar o Projeto
 
@@ -73,5 +65,3 @@ src/
 npm install
 npm run dev
 ```
-
-<img src="/imagens-do-projeto/logovitta.png" alt="Logo da Vitta" />
