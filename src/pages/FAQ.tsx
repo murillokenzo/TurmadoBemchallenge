@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Navbar from '../components/Navbar'
 import Header from '../components/Header'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const perguntas = [
@@ -30,37 +30,40 @@ function FAQ() {
   }
 
   return (
-    <>
+    <div className="bg-[url('/imagens-do-projeto/imagemfundovitta.jpg')] bg-[length:50%]">
       <Header />
       <Navbar />
 
-      <main id="mainfaq">
-        <h1>❓ Perguntas Frequentes</h1>
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-20 py-8">
+        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-10">❓ Perguntas Frequentes</h1>
 
-        <section className="Perguntas">
-          <figure>
-            <img src="/imagens-do-projeto/imagemfaqvita.webp" alt="Ilustração de perguntas e respostas" />
+        <section className="flex gap-10 mt-8">
+          <figure className="shrink-0">
+            <img src="/imagens-do-projeto/imagemfaqvita.webp" alt="Ilustração FAQ" className="w-72 rounded-lg" />
           </figure>
 
-          <div className="faq-lista">
+          <div className="flex flex-col gap-3 w-full">
             {perguntas.map((item, index) => (
               <div
                 key={index}
-                className={`faq-item ${ativo === index ? 'active' : ''}`}
+                className={`rounded-xl px-5 py-4 cursor-pointer shadow-md transition-all ${ativo === index ? 'bg-[#3B5C75] text-white' : 'bg-white text-[#3B5C75]'}`}
+                onClick={() => toggleItem(index)}
               >
-                <div className="faq-question" onClick={() => toggleItem(index)}>
+                <div className="flex justify-between items-center font-bold text-lg">
                   {item.pergunta}
+                  <span className={`transition-transform duration-300 ${ativo === index ? 'rotate-180' : ''}`}>▼</span>
                 </div>
                 {ativo === index && (
-                  <div className="faq-answer">{item.resposta}</div>
+                  <p className="mt-3 font-['Roboto'] text-base border-t border-white/30 pt-3">{item.resposta}</p>
                 )}
               </div>
             ))}
           </div>
         </section>
       </main>
+
       <Footer />
-    </>
+    </div>
   )
 }
 

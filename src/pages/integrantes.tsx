@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar'
 import Header from '../components/Header'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CardIntegrante from '../components/CardIntegrante'
 
@@ -32,14 +32,14 @@ const integrantes = [
 
 function Integrantes() {
   return (
-    <>
+    <div className="bg-[url('/imagens-do-projeto/imagemfundovitta.jpg')] bg-[length:50%]">
       <Header />
       <Navbar />
 
-      <main id="mainintegrantes" className="integrantes">
-        <h1>Conheça nossa melhor equipe</h1>
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-20 py-8">
+        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-10">Conheça nossa melhor equipe</h1>
 
-        <section className="cards">
+        <section className="flex flex-wrap justify-center gap-8 mb-10">
           {integrantes.map((item, index) => (
             <CardIntegrante
               key={index}
@@ -55,7 +55,7 @@ function Integrantes() {
       </main>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

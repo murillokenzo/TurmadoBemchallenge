@@ -1,4 +1,4 @@
-# Vitta Odonto
+# 🦷 Vitta Odonto
 
 🔗 [Repositório no GitHub](https://github.com/murillokenzo/TurmadoBemchallenge)
 
@@ -10,11 +10,12 @@ A Vitta Odonto é uma plataforma web voltada para oferecer atendimento odontoló
 
 ## Tecnologias Utilizadas
 
-- React
-- TypeScript
-- Vite
-- React Router DOM
-- CSS3
+- ⚛️ React
+- ⚡ Vite
+- 🟦 TypeScript
+- 🎨 TailwindCSS
+- 🔀 React Router DOM
+- 📋 React Hook Form
 
 ## Estrutura de Pastas
 src/
@@ -30,38 +31,44 @@ Sobre.tsx
 Integrantes.tsx
 FAQ.tsx
 Servicos.tsx
+ServicoDetalhe.tsx
 Unidades.tsx
+UnidadeDetalhe.tsx
 FaleConosco.tsx
 Login.tsx
 App.tsx
 
-## Imagens do Projeto
-
-![Página FAQ](https://github.com/murillokenzo/TurmadoBemchallenge/raw/react/imagens-do-projeto/imagemfaqvita.webp)
-
-## Autores e Créditos
-
-### Murillo Kenzo Loureiro Kacinvazaki
-- RM: 566948
-- Turma: 1TDSPA
-- Disciplina: Front-end
-- [GitHub](https://github.com/murillokenzo) | [LinkedIn](https://www.linkedin.com/in/murillo-kenzo-loureiro-kacinvazaki-38362b347/)
-
-### Cauã Rocha do Amaral
-- RM: 567593
-- Turma: 1TDSPA
-- Disciplina: Java
-- [GitHub](https://github.com/eozoka) | [LinkedIn](https://www.linkedin.com/in/cau%C3%A3-rocha-983171269/)
-
-### Kauan Prado Famelli
-- RM: 566990
-- Turma: 1TDSPA
-- Disciplina: Python
-- [GitHub](https://github.com/kauanpf) | [LinkedIn](http://www.linkedin.com/in/kauan-prado-famelli-38018a381)
-
-## Como Rodar o Projeto
+## Como Executar Localmente
 
 ```bash
 npm install
 npm run dev
 ```
+
+## Imagens do Projeto
+
+![Página FAQ](https://github.com/murillokenzo/TurmadoBemchallenge/raw/react/imagens-do-projeto/imagemfaqvita.webp)
+
+## Integrantes
+
+### Murillo Kenzo Loureiro Kacinvazaki
+- RM: 566948 | Turma: 1TDSPA | Disciplina: Front-end
+- [GitHub](https://github.com/murillokenzo) | [LinkedIn](https://www.linkedin.com/in/murillo-kenzo-loureiro-kacinvazaki-38362b347/)
+
+### Cauã Rocha do Amaral
+- RM: 567593 | Turma: 1TDSPA | Disciplina: Java
+- [GitHub](https://github.com/eozoka) | [LinkedIn](https://www.linkedin.com/in/cau%C3%A3-rocha-983171269/)
+
+### Kauan Prado Famelli
+- RM: 566990 | Turma: 1TDSPA | Disciplina: Python
+- [GitHub](https://github.com/kauanpf) | [LinkedIn](http://www.linkedin.com/in/kauan-prado-famelli-38018a381)
+
+## Contato
+
+📧 VittaOdonto@gmail.com
+📞 +55 (11) 98562-3923
+📍 São Paulo - SP
+
+## Vídeo de Apresentação
+
+🎥 [Assista no YouTube](LINK_DO_VIDEO_AQUI)

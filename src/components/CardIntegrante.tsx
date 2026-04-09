@@ -9,14 +9,18 @@ type Props = {
 
 function CardIntegrante({ nome, rm, cargo, foto, github, linkedin }: Props) {
   return (
-    <div className="card">
-      <img src={foto} alt={nome} />
-      <h2>{nome}</h2>
-      <p className="descricao">{rm}</p>
-      <p className="cargo">{cargo}</p>
-      <div className="links">
-        <a href={github} target="_blank">GitHub</a>
-        <a href={linkedin} target="_blank">LinkedIn</a>
+    <div className="bg-white rounded-2xl shadow-md w-64 p-6 hover:-translate-y-1 transition-transform">
+      <img
+        src={foto}
+        alt={nome}
+        className="w-28 h-28 rounded-full border-4 border-[#3B5C75] mx-auto mb-4 object-cover"
+      />
+      <h2 className="text-xl text-center text-[#3B5C75] font-bold mb-2">{nome}</h2>
+      <p className="text-sm text-center text-gray-500 mb-1">{rm}</p>
+      <p className="text-center font-bold text-[#3B5C75] mb-4">{cargo}</p>
+      <div className="flex justify-center gap-4">
+        <a href={github} target="_blank" className="text-[#3B5C75] font-bold hover:underline">GitHub</a>
+        <a href={linkedin} target="_blank" className="text-[#3B5C75] font-bold hover:underline">LinkedIn</a>
       </div>
     </div>
   )
