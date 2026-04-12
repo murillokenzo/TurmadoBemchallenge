@@ -71,4 +71,4 @@ npm run dev
 
 ## Vídeo de Apresentação
 
-🎥 [Assista no YouTube](LINK_DO_VIDEO_AQUI)
+🎥 [Assista no YouTube](https://youtu.be/-P-kvTCEY0c)
