@@ -9,6 +9,8 @@ import Servicos from './pages/servicos'
 import Unidades from './pages/Unidades'
 import ServicoDetalhe from './pages/ServicoDetalhe'
 import UnidadeDetalhe from './pages/UnidadeDetalhe'
+import Agendamento from './pages/Agendamento'
+import Confirmacao from './pages/Confirmacao'
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/servicos/:id" element={<ServicoDetalhe />} />
         <Route path="/unidades" element={<Unidades />} />
         <Route path="/unidades/:id" element={<UnidadeDetalhe />} />
+        <Route path="/agendamento" element={<Agendamento />} />
+        <Route path="/agendamento/confirmacao" element={<Confirmacao />} />
       </Routes>
     </BrowserRouter>
   )
