@@ -40,17 +40,17 @@ function Servicos() {
       <Header />
       <Navbar />
 
-      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-20 py-8">
-        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-6">Nossos Serviços</h1>
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-4 sm:px-10 md:px-20 py-8">
+        <h1 className="bg-[#3B5C75] text-white text-2xl sm:text-3xl md:text-4xl px-5 py-5 text-center mb-6">Nossos Serviços</h1>
 
         <section className="mb-8">
-          <p className="font-['Roboto'] text-2xl px-5 text-center">
+          <p className="font-['Roboto'] text-lg sm:text-xl md:text-2xl px-2 sm:px-5 text-center">
             Na <strong>Vitta</strong>, acreditamos que um sorriso saudável é o primeiro passo para uma vida mais confiante e feliz.
             Oferecemos tratamentos odontológicos completos, com tecnologia moderna e atendimento humanizado.
           </p>
         </section>
 
-        <section className="flex flex-wrap justify-center gap-8 mb-10">
+        <section className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10">
           {servicos.map((item) => (
             <div key={item.id} onClick={() => navigate(`/servicos/${item.id}`)} className="cursor-pointer">
               <CardServico titulo={item.titulo} descricao={item.descricao} />
@@ -59,8 +59,8 @@ function Servicos() {
         </section>
 
         <button
-          onClick={() => navigate('/fale-conosco')}
-          className="flex justify-center items-center mx-auto my-6 w-64 h-16 bg-[#3B5C75] text-[#F8F5F1] font-['Oswald'] text-xl rounded-xl hover:text-2xl transition-all"
+          onClick={() => navigate('/agendamento')}
+          className="flex justify-center items-center mx-auto my-6 w-48 sm:w-56 md:w-64 h-14 md:h-16 bg-[#3B5C75] text-[#F8F5F1] font-['Oswald'] text-lg md:text-xl rounded-xl hover:text-2xl transition-all"
         >
           Agende sua consulta
         </button>

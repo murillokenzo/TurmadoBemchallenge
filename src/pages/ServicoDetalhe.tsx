@@ -21,8 +21,8 @@ function ServicoDetalhe() {
       <div>
         <Header />
         <Navbar />
-        <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-20 py-8 text-center">
-          <h1 className="text-3xl text-[#3B5C75] mt-10">Serviço não encontrado!</h1>
+        <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-4 sm:px-10 md:px-20 py-8 text-center">
+          <h1 className="text-2xl sm:text-3xl text-[#3B5C75] mt-10">Serviço não encontrado!</h1>
           <button onClick={() => navigate('/servicos')} className="mt-6 bg-[#3B5C75] text-white px-6 py-3 rounded-xl hover:scale-105 transition-all">
             Voltar para Serviços
           </button>
@@ -37,23 +37,23 @@ function ServicoDetalhe() {
       <Header />
       <Navbar />
 
-      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-20 py-8">
-        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-8">{servico.titulo}</h1>
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-4 sm:px-10 md:px-20 py-8">
+        <h1 className="bg-[#3B5C75] text-white text-2xl sm:text-3xl md:text-4xl px-5 py-5 text-center mb-8">{servico.titulo}</h1>
 
-        <div className="bg-white rounded-2xl shadow-md p-10 text-center mb-8">
-          <p className="font-['Roboto'] text-2xl text-gray-600 leading-relaxed">{servico.descricao}</p>
+        <div className="bg-white rounded-2xl shadow-md p-6 sm:p-10 text-center mb-8">
+          <p className="font-['Roboto'] text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed">{servico.descricao}</p>
         </div>
 
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 flex-wrap">
           <button
             onClick={() => navigate('/servicos')}
-            className="bg-gray-400 text-white px-6 py-3 rounded-xl text-xl hover:scale-105 transition-all"
+            className="bg-gray-400 text-white px-6 py-3 rounded-xl text-lg sm:text-xl hover:scale-105 transition-all"
           >
             Voltar
           </button>
           <button
-            onClick={() => navigate('/fale-conosco')}
-            className="bg-[#3B5C75] text-white px-6 py-3 rounded-xl text-xl hover:scale-105 transition-all"
+            onClick={() => navigate('/agendamento')}
+            className="bg-[#3B5C75] text-white px-6 py-3 rounded-xl text-lg sm:text-xl hover:scale-105 transition-all"
           >
             Agendar Consulta
           </button>
