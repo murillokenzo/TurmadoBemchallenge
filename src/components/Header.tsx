@@ -4,7 +4,7 @@ function Header() {
       <img
         src="/imagens-do-projeto/logovitta.png"
         alt="Logo da Vitta"
-        className="w-52 max-w-[60%] h-auto"
+        className="w-32 sm:w-40 md:w-52 max-w-[60%] h-auto"
       />
     </header>
   )
