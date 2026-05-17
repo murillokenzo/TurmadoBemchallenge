@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { useVitta } from '../context/VittaContext'
+import { useVitta } from '../context/Vittacontext'
 import { useNavigate } from 'react-router-dom'
 
 type FormData = {
@@ -29,14 +29,13 @@ function Agendamento() {
       <Header />
       <Navbar />
 
-      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-2xl mx-auto px-10 py-8 my-8 rounded-2xl">
-        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-8">Agendar Consulta 🦷</h1>
-        <p className="font-['Roboto'] text-xl text-center mb-8 text-gray-600">
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-2xl mx-auto px-4 sm:px-8 md:px-10 py-8 my-8 rounded-2xl">
+        <h1 className="bg-[#3B5C75] text-white text-2xl sm:text-3xl md:text-4xl px-5 py-5 text-center mb-8">Agendar Consulta 🦷</h1>
+        <p className="font-['Roboto'] text-lg sm:text-xl text-center mb-8 text-gray-600">
           Preencha o formulário abaixo para agendar sua consulta gratuita.
         </p>
 
         <div className="flex flex-col gap-5">
-
           <div className="flex flex-col gap-1">
             <label className="font-bold text-gray-700">Nome completo</label>
             <input
@@ -99,7 +98,7 @@ function Agendamento() {
           <button
             type="button"
             onClick={handleSubmit(onSubmit)}
-            className="bg-[#3B5C75] text-white text-xl font-bold py-3 rounded-xl hover:bg-[#2a4558] hover:scale-105 transition-all cursor-pointer mt-4"
+            className="bg-[#3B5C75] text-white text-lg md:text-xl font-bold py-3 rounded-xl hover:bg-[#2a4558] hover:scale-105 transition-all cursor-pointer mt-4"
           >
             Agendar Consulta
           </button>
