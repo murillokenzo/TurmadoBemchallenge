@@ -10,11 +10,12 @@ type FormData = {
 }
 
 function Login() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>()
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>()
   const navigate = useNavigate()
 
   function onSubmit(data: FormData) {
     console.log(data)
+    reset()
     navigate('/')
   }
 
@@ -23,11 +24,11 @@ function Login() {
       <Header />
       <Navbar />
 
-      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-lg mx-auto px-10 py-8 my-8 rounded-2xl">
-        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-8">Bem-vindo 🦷</h1>
-        <p className="font-['Roboto'] text-xl text-center mb-8">Faça login para acessar sua conta e acompanhar seus agendamentos.</p>
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-lg mx-auto px-4 sm:px-8 md:px-10 py-8 my-8 rounded-2xl">
+        <h1 className="bg-[#3B5C75] text-white text-2xl sm:text-3xl md:text-4xl px-5 py-5 text-center mb-8">Bem-vindo 🦷</h1>
+        <p className="font-['Roboto'] text-lg sm:text-xl text-center mb-8">Faça login para acessar sua conta e acompanhar seus agendamentos.</p>
 
-        <div className="flex flex-col gap-5" onSubmit={handleSubmit(onSubmit)}>
+        <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
             <label className="font-bold text-gray-700">E-mail</label>
             <input
@@ -53,7 +54,7 @@ function Login() {
           <button
             type="button"
             onClick={handleSubmit(onSubmit)}
-            className="bg-blue-500 text-white text-xl font-bold py-3 rounded-xl hover:bg-blue-600 hover:scale-105 transition-all cursor-pointer"
+            className="bg-blue-500 text-white text-lg sm:text-xl font-bold py-3 rounded-xl hover:bg-blue-600 hover:scale-105 transition-all cursor-pointer"
           >
             Entrar
           </button>
