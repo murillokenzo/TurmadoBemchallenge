@@ -72,3 +72,9 @@ npm run dev
 ## Vídeo de Apresentação
 
 🎥 [Assista no YouTube](https://youtu.be/-P-kvTCEY0c)
+
+## Como Usar
+
+- 🔗 [Repositório no GitHub](https://github.com/murillokenzo/TurmadoBemchallenge)
+- 🌐 [Projeto na Vercel](https://turmado-bemchallenge-sem4.vercel.app/)
+- 🎥 Link do vídeo no YouTube: Pedente (sera gravado assim que possivel)
