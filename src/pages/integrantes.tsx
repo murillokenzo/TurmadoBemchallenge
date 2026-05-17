@@ -36,10 +36,10 @@ function Integrantes() {
       <Header />
       <Navbar />
 
-      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-20 py-8">
-        <h1 className="bg-[#3B5C75] text-white text-4xl px-5 py-5 text-center mb-10">Conheça nossa melhor equipe</h1>
+      <main className="font-['Oswald'] bg-[#F8F5F1] shadow-md w-full max-w-5xl mx-auto px-4 sm:px-10 md:px-20 py-8">
+        <h1 className="bg-[#3B5C75] text-white text-2xl sm:text-3xl md:text-4xl px-5 py-5 text-center mb-10">Conheça nossa melhor equipe</h1>
 
-        <section className="flex flex-wrap justify-center gap-8 mb-10">
+        <section className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10">
           {integrantes.map((item, index) => (
             <CardIntegrante
               key={index}
@@ -59,4 +59,4 @@ function Integrantes() {
   )
 }
 
-export default Integrantes
+export default Integrantes 
