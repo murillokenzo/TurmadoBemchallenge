@@ -1,9 +1,11 @@
 import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { useVitta } from '../context/Vittacontext'
-import { useNavigate } from 'react-router-dom'
+import { useVitta } from '../context/VittaContext'
+import { postChamado } from '../services/api'
 
 type FormData = {
   nome: string
@@ -16,12 +18,23 @@ type FormData = {
 function Agendamento() {
   const { adicionarAgendamento } = useVitta()
   const navigate = useNavigate()
+  const [enviando, setEnviando] = useState(false)
+  const [erro, setErro] = useState('')
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>()
 
-  function onSubmit(data: FormData) {
-    adicionarAgendamento(data)
-    reset()
-    navigate('/agendamento/confirmacao')
+  async function onSubmit(data: FormData) {
+    setEnviando(true)
+    setErro('')
+    try {
+      await postChamado(data)
+      adicionarAgendamento(data)
+      reset()
+      navigate('/agendamento/confirmacao')
+    } catch {
+      setErro('Erro ao enviar agendamento. Tente novamente.')
+    } finally {
+      setEnviando(false)
+    }
   }
 
   return (
@@ -34,6 +47,8 @@ function Agendamento() {
         <p className="font-['Roboto'] text-lg sm:text-xl text-center mb-8 text-gray-600">
           Preencha o formulário abaixo para agendar sua consulta gratuita.
         </p>
+
+        {erro && <p className="text-red-500 text-center mb-4 font-['Roboto']">{erro}</p>}
 
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
@@ -98,9 +113,10 @@ function Agendamento() {
           <button
             type="button"
             onClick={handleSubmit(onSubmit)}
-            className="bg-[#3B5C75] text-white text-lg md:text-xl font-bold py-3 rounded-xl hover:bg-[#2a4558] hover:scale-105 transition-all cursor-pointer mt-4"
+            disabled={enviando}
+            className="bg-[#3B5C75] text-white text-lg md:text-xl font-bold py-3 rounded-xl hover:bg-[#2a4558] hover:scale-105 transition-all cursor-pointer mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Agendar Consulta
+            {enviando ? 'Enviando...' : 'Agendar Consulta'}
           </button>
         </div>
       </main>
