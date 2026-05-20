@@ -1,4 +1,4 @@
-import { useVitta } from '../context/Vittacontext'
+import { useVitta } from '../context/VittaContext'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
