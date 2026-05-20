@@ -64,23 +64,23 @@ function Chamados() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-['Roboto']">
                 <div className="bg-gray-50 rounded-xl p-4">
-                  <p className="font-bold text-[#3B5C75] mb-2">👤 Paciente</p>
+                  <p className="font-bold text-[#3B5C75] mb-2"> Paciente</p>
                   <p className="text-gray-700 text-sm">{chamado.paciente.nome}</p>
-                  <p className="text-gray-500 text-sm">📞 {chamado.paciente.telefone}</p>
-                  <p className="text-gray-500 text-sm">🎂 {chamado.paciente.idade} anos</p>
+                  <p className="text-gray-500 text-sm"> {chamado.paciente.telefone}</p>
+                  <p className="text-gray-500 text-sm"> {chamado.paciente.idade} anos</p>
                 </div>
 
                 <div className="bg-gray-50 rounded-xl p-4">
-                  <p className="font-bold text-[#3B5C75] mb-2">🦷 Dentista</p>
+                  <p className="font-bold text-[#3B5C75] mb-2"> Dentista</p>
                   <p className="text-gray-700 text-sm">{chamado.dentista.nome}</p>
-                  <p className="text-gray-500 text-sm">🎓 {chamado.dentista.especialidade}</p>
+                  <p className="text-gray-500 text-sm"> {chamado.dentista.especialidade}</p>
                 </div>
               </div>
 
               <div className="bg-gray-50 rounded-xl p-4 mt-4 font-['Roboto']">
-                <p className="font-bold text-[#3B5C75] mb-2">📝 Problema</p>
+                <p className="font-bold text-[#3B5C75] mb-2"> Problema</p>
                 <p className="text-gray-700 text-sm">{chamado.formulario.descricaoProblema}</p>
-                <p className="text-gray-500 text-sm mt-1">📅 {chamado.formulario.data}</p>
+                <p className="text-gray-500 text-sm mt-1">  {chamado.formulario.data}</p>
               </div>
             </div>
           ))}

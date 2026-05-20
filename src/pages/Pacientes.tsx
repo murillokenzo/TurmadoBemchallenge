@@ -44,9 +44,9 @@ function Pacientes() {
           {pacientes.map(paciente => (
             <div key={paciente.id} className="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition-transform">
               <h2 className="bg-[#3B5C75] text-white rounded-xl px-3 py-2 mb-4 text-lg font-bold text-center">{paciente.nome}</h2>
-              <p className="font-['Roboto'] text-gray-600 text-sm mb-2">🪪 {paciente.cpf}</p>
-              <p className="font-['Roboto'] text-gray-600 text-sm mb-2">🎂 {paciente.idade} anos</p>
-              <p className="font-['Roboto'] text-gray-600 text-sm">📞 {paciente.telefone}</p>
+              <p className="font-['Roboto'] text-gray-600 text-sm mb-2">{paciente.cpf}</p>
+              <p className="font-['Roboto'] text-gray-600 text-sm mb-2">{paciente.idade} anos</p>
+              <p className="font-['Roboto'] text-gray-600 text-sm">{paciente.telefone}</p>
             </div>
           ))}
         </div>
