@@ -1,13 +1,14 @@
 type Props = {
   nome: string
   rm: string
+  turma: string
   cargo: string
   foto: string
   github: string
   linkedin: string
 }
 
-function CardIntegrante({ nome, rm, cargo, foto, github, linkedin }: Props) {
+function CardIntegrante({ nome, rm, turma, cargo, foto, github, linkedin }: Props) {
   return (
     <div className="bg-white rounded-2xl shadow-md w-full sm:w-64 p-6 hover:-translate-y-1 transition-transform">
       <img
@@ -17,6 +18,7 @@ function CardIntegrante({ nome, rm, cargo, foto, github, linkedin }: Props) {
       />
       <h2 className="text-lg sm:text-xl text-center text-[#3B5C75] font-bold mb-2">{nome}</h2>
       <p className="text-sm text-center text-gray-500 mb-1">{rm}</p>
+      <p className="text-sm text-center text-gray-500 mb-1">{turma}</p>
       <p className="text-center font-bold text-[#3B5C75] mb-4">{cargo}</p>
       <div className="flex justify-center gap-4">
         <a href={github} target="_blank" className="text-[#3B5C75] font-bold hover:underline">GitHub</a>

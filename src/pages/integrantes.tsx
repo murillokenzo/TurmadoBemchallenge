@@ -7,6 +7,7 @@ const integrantes = [
   {
     nome: 'Murillo Kenzo Loureiro Kacinvazaki',
     rm: 'RM - 566948',
+    turma: '1TDSPA',
     cargo: 'Front-end',
     foto: '/imagens-do-projeto/murillovitta.jpg',
     github: 'https://github.com/murillokenzo',
@@ -15,6 +16,7 @@ const integrantes = [
   {
     nome: 'Cauã Rocha do Amaral',
     rm: 'RM - 567593',
+    turma: '1TDSPA',
     cargo: 'Java',
     foto: '/imagens-do-projeto/cauavitta.jpg',
     github: 'https://github.com/eozoka',
@@ -23,6 +25,7 @@ const integrantes = [
   {
     nome: 'Kauan Prado Famelli',
     rm: 'RM - 566990',
+    turma: '1TDSPA',
     cargo: 'Python',
     foto: '/imagens-do-projeto/pradovitta.jpg',
     github: 'https://github.com/kauanpf',
@@ -45,6 +48,7 @@ function Integrantes() {
               key={index}
               nome={item.nome}
               rm={item.rm}
+              turma={item.turma}
               cargo={item.cargo}
               foto={item.foto}
               github={item.github}
@@ -59,4 +63,4 @@ function Integrantes() {
   )
 }
 
-export default Integrantes 
+export default Integrantes
