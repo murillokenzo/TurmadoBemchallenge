@@ -15,14 +15,14 @@ function Navbar() {
           <Link to="/servicos" className="text-white pl-10 font-['Oswald'] text-2xl no-underline hover:text-3xl transition-all">Serviços</Link>
           <Link to="/unidades" className="text-white pl-10 font-['Oswald'] text-2xl no-underline hover:text-3xl transition-all">Unidades</Link>
           <Link to="/agendamento" className="text-white pl-10 font-['Oswald'] text-2xl no-underline hover:text-3xl transition-all">Agendamento</Link>
+          <Link to="/pacientes" className="text-white pl-10 font-['Oswald'] text-2xl no-underline hover:text-3xl transition-all">Pacientes</Link>
+          <Link to="/dentistas" className="text-white pl-10 font-['Oswald'] text-2xl no-underline hover:text-3xl transition-all">Dentistas</Link>
+          <Link to="/chamados" className="text-white pl-10 font-['Oswald'] text-2xl no-underline hover:text-3xl transition-all">Chamados</Link>
         </div>
 
         <div className="md:hidden flex justify-between items-center px-6 py-2">
           <span className="text-white font-['Oswald'] text-xl italic">Menu</span>
-          <button
-            onClick={() => setMenuAberto(!menuAberto)}
-            className="text-white text-3xl"
-          >
+          <button onClick={() => setMenuAberto(!menuAberto)} className="text-white text-3xl">
             {menuAberto ? '✕' : '☰'}
           </button>
         </div>
@@ -36,12 +36,15 @@ function Navbar() {
             <Link to="/servicos" onClick={() => setMenuAberto(false)} className="text-white font-['Oswald'] text-xl">Serviços</Link>
             <Link to="/unidades" onClick={() => setMenuAberto(false)} className="text-white font-['Oswald'] text-xl">Unidades</Link>
             <Link to="/agendamento" onClick={() => setMenuAberto(false)} className="text-white font-['Oswald'] text-xl">Agendamento</Link>
+            <Link to="/pacientes" onClick={() => setMenuAberto(false)} className="text-white font-['Oswald'] text-xl">Pacientes</Link>
+            <Link to="/dentistas" onClick={() => setMenuAberto(false)} className="text-white font-['Oswald'] text-xl">Dentistas</Link>
+            <Link to="/chamados" onClick={() => setMenuAberto(false)} className="text-white font-['Oswald'] text-xl">Chamados</Link>
           </div>
         )}
       </nav>
 
       <Link to="/login" className="fixed bottom-6 right-6 bg-[#0877C8] text-white font-bold text-xl px-6 py-4 rounded-full shadow-lg z-50 hover:bg-[#3B5C75] hover:scale-105 transition-all">
-        🔐 Login
+        Login
       </Link>
     </>
   )

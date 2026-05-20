@@ -7,8 +7,8 @@ import { getDentistas } from '../services/api'
 type Dentista = {
   id: number
   nome: string
+  cpf: string
   especialidade: string
-  email: string
 }
 
 function Dentistas() {
@@ -43,8 +43,8 @@ function Dentistas() {
           {dentistas.map(dentista => (
             <div key={dentista.id} className="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition-transform">
               <h2 className="bg-[#3B5C75] text-white rounded-xl px-3 py-2 mb-4 text-lg font-bold text-center">{dentista.nome}</h2>
-              <p className="font-['Roboto'] text-gray-600 text-sm mb-2">🎓 {dentista.especialidade}</p>
-              <p className="font-['Roboto'] text-gray-600 text-sm">📧 {dentista.email}</p>
+              <p className="font-['Roboto'] text-gray-600 text-sm mb-2">🪪 {dentista.cpf}</p>
+              <p className="font-['Roboto'] text-gray-600 text-sm">🎓 {dentista.especialidade}</p>
             </div>
           ))}
         </div>

@@ -11,6 +11,9 @@ import ServicoDetalhe from './pages/ServicoDetalhe'
 import UnidadeDetalhe from './pages/UnidadeDetalhe'
 import Agendamento from './pages/Agendamento'
 import Confirmacao from './pages/Confirmacao'
+import Pacientes from './pages/Pacientes'
+import Dentistas from './pages/Dentistas'
+import Chamados from './pages/Chamados'
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
         <Route path="/unidades/:id" element={<UnidadeDetalhe />} />
         <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/agendamento/confirmacao" element={<Confirmacao />} />
+        <Route path="/pacientes" element={<Pacientes />} />
+        <Route path="/dentistas" element={<Dentistas />} />
+        <Route path="/chamados" element={<Chamados />} />
       </Routes>
     </BrowserRouter>
   )
