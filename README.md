@@ -76,5 +76,5 @@ npm run dev
 ## Como Usar
 
 - 🔗 [Repositório no GitHub](https://github.com/murillokenzo/TurmadoBemchallenge)
-- 🌐 [Projeto na Vercel](https://turmado-bemchallenge-sem4.vercel.app/)
+- 🌐 [Projeto na Vercel](https://turmado-bemchallenge-fq9bria6e-vitta.vercel.app/)
 - 🎥 [Link do vídeo no YouTube](https://youtu.be/w0G6pIP9vmw)
