@@ -72,6 +72,7 @@ npm run dev
 ## Vídeo de Apresentação
 
 🎥 [Assista no YouTube](https://youtu.be/-P-kvTCEY0c)
+    - video da sprint 3 apenas apresentando o site
 
 ## Como Usar
 
